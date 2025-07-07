@@ -1,0 +1,111 @@
+/*RESET*/
+@import url(reset.css);
+
+body {
+    font-family: "Space Grotesk", Arial, sans-serif;
+    font-size: 1.25rem;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+.account {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+.account__left-side {
+    font-family: "Manrope", Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    gap: 1.3125rem; /* 21px */
+    flex: 0 0 50%;
+}
+
+.account__left-side::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/left-side-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.account__left-side,
+.account__content {
+    padding: 4.75rem 4.166667%; /* 4.75rem = 76px */ /*60/1440 * 100% = 4.166667%*/
+}
+
+.account__title,
+.account__text {
+    position: relative;
+}
+
+.account__title {
+    font-size: 2.5rem; /* 40px */
+    font-weight: 800;
+    line-height: 1.15; /* 46px */
+    margin-bottom: 1.5rem; /* 24px */
+    max-width: 19.3125rem; /* 309px */
+}
+
+.account__title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem; /* 8px */
+    width: 3.125rem; /* 50px */
+    height: 0.25rem; /* 4px */
+    background-color: #fff;
+}
+
+.account__text {
+    font-size: 1.125rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.35; /* 20px */
+    margin-bottom: 1.5rem; /* 24px */
+}
+
+.account__content {
+    flex: 1 1 auto;
+}
+.account__inset {
+}
+.account__logo {
+}
+.account__form {
+}
+.form {
+}
+.form__title {
+}
+.form__text {
+}
+.form__items {
+}
+.form__input {
+}
+.form__actions {
+}
+.form__button {
+}
+.form__or {
+}
+.form__google {
+}
+.account__login {
+}
+.account__login-text {
+}
+.account__login-link {
+}
