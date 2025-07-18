@@ -298,3 +298,26 @@ body {
 .loaded .account__login-link {
     transition-delay: 1.5s;
 }
+
+
+/* Responsive styles */
+@media (max-width: 64.375rem) { /* 1020px */
+    .account{
+        display: block;
+    }
+
+    .account__left-side::before {
+        transform: translate(0, 0);
+    }
+
+    .account__left-side,
+    .account__content {
+        padding: 2.75rem 5.166667%; /* 2.75rem = 44px */ /*60/1160 * 100% = 5.166667%*/ 
+    }
+
+    .account__inset {
+        gap: 2.125rem; /* 34px */
+        min-width: 0;
+        max-width: none;
+    }
+}
